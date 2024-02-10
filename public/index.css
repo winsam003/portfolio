@@ -324,26 +324,68 @@ footer>a {
     grid-template-columns: 1fr 1fr;
 }
 
+.container_study>:first-child {
+    width: 70vh;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 .container_study>:last-child {
     background-image: url("../image/cup.jpg");
     background-size: cover;
 }
 
-.database_modal{
+
+.MVC_model{
+    background-image: url("../image/Untitled.png");
+    background-size: cover;
     width: 30vh;
     height: 30vh;
-    margin-left: 1.6rem;
+    margin-left: 3.2rem;
     margin-top: 10rem;
-    background-color: aqua;
 }
+
+.MVC_model:hover{
+    cursor: pointer;
+}
+
+.MVC_model::after{
+    content: "MVC Model";
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    justify-content: center;
+    line-height: 30vh;
+
+    font-weight: bold;
+    font-size: large;
+    transition: opacity 1s ease-in-out;
+}
+.MVC_model:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
 
 .container_project {
     height: 100vh;
-    background-color: brown;
+    background-color: darksalmon;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container_project>:first-child{
+    background-image: url(../image/business.jpg);
+    background-size: cover;
 }
 
 .container_board {
     height: 100vh;
-    background-color: chartreuse;
+    background-color: LightYellow;
 }
