@@ -316,7 +316,7 @@ footer>a {
 
 
 
-.container_study {
+.container_project {
     height: 100vh;
     background-color: beige;
 
@@ -324,14 +324,14 @@ footer>a {
     grid-template-columns: 1fr 1fr;
 }
 
-.container_study>:first-child {
+.container_project>:first-child {
     width: 70vh;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.container_study>:last-child {
+.container_project>:last-child {
     background-image: url("../image/cup.jpg");
     background-size: cover;
 }
@@ -372,7 +372,7 @@ footer>a {
 
 
 
-.container_project {
+.container_update {
     height: 100vh;
     background-color: darksalmon;
 
@@ -380,7 +380,31 @@ footer>a {
     grid-template-columns: 1fr 1fr;
 }
 
-.container_project>:first-child{
+.container_update>div>p{
+    font-size: large;
+    font-weight: bold;
+    height: 3rem;
+    margin-top: 8rem;
+    margin-left: 2rem;
+}
+
+.parent_ul{
+    list-style-type: none;
+    height: 1.6rem;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 1.6rem;
+}
+
+
+.child_ul{
+    list-style-type: none;
+    height: 1.6rem;
+    font-weight: 400;
+    margin-left: 1.6rem;
+}
+
+.container_update>:first-child{
     background-image: url(../image/business.jpg);
     background-size: cover;
 }
@@ -388,4 +412,6 @@ footer>a {
 .container_board {
     height: 100vh;
     background-color: LightYellow;
+
+    position: static;
 }
