@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Sam's portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Poor+Story&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
 <body>
@@ -14,26 +21,29 @@
         <div class="container_head" id="sec01">
             <header>
                 <div>
-                    <a href="#">Sam's portfolio</a>
+                    <span class="header_portfolio" onclick="header_portfolio()">Sam's portfolio</span>
                     <ul>
-                        <li><a href="#sec01">Home</a></li>
-                        <li><a href="#sec02">About</a></li>
-                        <li><a href="#sec03">Project</a></li>
-                        <li><a href="#sec04">Update</a></li>
-                        <li><a href="#sec05">Board</a></li>
+                        <li><span class="header_title" onclick="header_portfolio()" >Home</span></li>
+                        <li><span class="header_title" onclick="header_About()">About</span></li>
+                        <li><span class="header_title" onclick="header_Project()">Project</span></li>
+                        <li><span class="header_title" onclick="header_Update()">Update</span></li>
+                        <li><span class="header_title" onclick="header_Baord()">Board</span></li>
                     </ul>
                 </div>
             </header>
             <section class="home">
-                <p>Hello World!</p>
-                <p>안녕하세요. 백엔드 개발자를 꿈꾸는 최승삼입니다.</p>
-                <div>
-                    <a href="#sec02">Learn more</a>
+                <div class="home_title">Hello World!</div>
+                <div class="home_title">안녕하세요. 백엔드, 프론트엔드 풀스택 신입 개발자 최승삼입니다.</div>
+                <div class="home_title home_LearnMore">
+                    <span class="home_LearnMore2">Learn more</span>
                 </div>
             </section>
             <footer>
                 <p>contact me</p>
-                <a href="#">winsam003@gmail.com</a>
+                <!-- <i class="fa-brands fa-google"></i> -->
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-blogger"></i>
+                <!-- <a href="#">winsam003@gmail.com</a> -->
             </footer>
         </div>
         <section class="container_about" id="sec02">
@@ -41,7 +51,7 @@
             <div>
                 <div class="about_category1">
                     <p>About</p>
-                    <span>안녕하세요. 개발자를 꿈꾸는 최승삼입니다. 제 포트폴리오에 관심을 가져주셔서 감사합니다.</span>
+                    <span>안녕하세요. 미래를 개척하는 개발자를 최승삼입니다. 제 포트폴리오에 관심을 가져주셔서 감사합니다.</span>
                 </div>
                 <div class="about_category2">
                     <p>Education</p>
@@ -49,16 +59,30 @@
                         <li>양영디지털고등학교 (네트워크과)</li>
                         <li>한국기술교육대학교 (컴퓨터공학과) * 집안사정으로 중퇴</li>
                         <li>2023.10 ~ 2023.5 그린컴퓨터 아카데미 풀스택 개발자 과정 이수중</li>
-                        <li>취업 후 사이버대학교 컴퓨터공학 재학예정</li>
                     </ul>
                 </div>
                 <div class="about_category3">
                     <p>Certificate</p>
                     <ul>
-                        <li>정보기기운용기능사(2012)</li>
-                        <li>SQLD (2024)(취득예정?)</li>
+                        <li>정보기기운용기능사 (2012)</li>
+                        <li>OPIC intermediate Mid 1급 (2023)</li>
+                        <li>SQLD (2024)</li>
                     </ul>
                 </div>
+                <div>
+                    <p>Certificate</p>
+                    <ul>
+                        <li>정보기기운용기능사 (2012)</li>
+                        <li>OPIC intermediate Mid 1급 (2023)</li>
+                        <li>SQLD (2024)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container_project" id="sec03">
+            <div>
+                <div class="MVC_model" onclick="MVC_model()"></div>
+                <div class="MVC_model"></div>
                 <div class="about_category4">
                     <p>Study</p>
                     <div class="study_gridContainor1">
@@ -76,12 +100,6 @@
                         <div></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="container_project" id="sec03">
-            <div>
-                <div class="MVC_model" onclick="MVC_model()"></div>
-                <div class="MVC_model"></div>
             </div>
             <div></div>
         </section>

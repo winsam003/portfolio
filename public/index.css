@@ -1,100 +1,129 @@
-* {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 html {
-    background-color: #333;
+    background-color: #E6E6FA;
     scroll-behavior: smooth;
 }
 
 .root {
     margin: auto;
-    width: 80%;
-    max-width: 1680px;
-}
 
-.container_head {
     height: 100vh;
-    padding: 30px 100px 0px 100px;
+    width: 1920px;
+
+    font-family: 'Poor Story', cursive;
 }
 
 header {
     position: fixed;
     height: 10%;
-    width: 80%;
+    width: 100%;
+
 }
+
+.fa-brands{
+    cursor: pointer;
+}
+
 
 header>div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 30%;
-    width: 80%;
+    width: 100%;
 }
 
-header>div>a {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: white;
-}
-
-header>div>ul>li>a {
-    color: white;
-}
-
-header>div>ul>li>a:hover {
-    border-bottom: 5px solid gray;
+header>div>ul>li:hover {
+    background-color: azure;
+    /* border-bottom: 5px solid gray; */
 }
 
 header:first-child {
-    margin-left: 1.5rem;
-    padding-top: 30px;
+    padding-top: 5rem;
 }
 
 header>div>ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
 }
 
 header>div>ul>li {
-    list-style-type: none;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-header>div>ul>li>a {
-    font-size: 1.2rem;
-    font-weight: 800;
-    text-decoration: none;
-    padding-bottom: 5px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    list-style-type: none;
     margin-right: 30px;
 }
 
+.header_portfolio {
+    color: #2F4F4F;
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header_title {
+    color: #2F4F4F;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+
+    cursor: pointer;
+    /* padding-bottom: 5px; */
+}
+
 .home {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /* flex-direction: column; */
     height: 50%;
-    margin-top: 300px;
+    /* align-items: center; */
+    padding-top: 300px;
     text-align: center;
+    width: 100vw;
 }
 
 .home>:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-size: 2.2rem;
-    font-weight: 500;
+    font-weight: bold;
     height: 10%;
     text-align: center;
     animation: fadein 2s steps(22), step-end infinite alternate;
-    color: white;
+
+    color: #A52A2A;
     margin-bottom: 20px;
 }
 
 .home>:nth-of-type(2) {
-    font-size: 1.6rem;
-    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.2rem;
+    font-weight: bold;
+    height: 20%;
+
     text-align: center;
-    animation: typing 4s steps(22), step-end infinite alternate;
+    animation: typing 4s steps(80), step-end infinite alternate;
     overflow: hidden;
     white-space: nowrap;
-    color: white;
+    color: #A0522D;
+
+    margin: 0 auto;
+    /* 추가된 부분 */
+}
+
+.home_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width:600px) {
@@ -114,35 +143,47 @@ header>div>ul>li>a {
 }
 
 @keyframes typing {
-    from {
-        width: 0
+    0% {
+        width: 0;
+        margin: 0 auto;
+        /* 화면의 가운데 정렬 */
     }
 
-    to {
-        width: 100%
+    100% {
+        width: 100%;
+        margin: 0 auto;
+        /* 화면의 가운데 정렬 */
     }
 }
+
+.home_LearnMore {
+    margin-top: 40px;
+}
+
 
 .home>div {
     height: 40px;
 }
 
-.home>div>a {
+.home>div>span {
     display: inline-block;
     text-decoration: none;
-    color: #6495ED;
+    color: #000000;
     font-size: 1.6rem;
     height: 40px;
-    margin-top: 40px;
+
+    cursor: pointer;
 }
 
-.home>div>a:hover {
-    border-bottom: solid gray;
+.home_LearnMore2:hover {
+    background-color: #E6E6FA;
+    /* border-bottom: solid gray; */
 }
 
 footer {
     text-align: center;
     height: 10%;
+    width: 100vw;
 }
 
 footer>p {
@@ -337,7 +378,7 @@ footer>a {
 }
 
 
-.MVC_model{
+.MVC_model {
     background-image: url("../image/Untitled.png");
     background-size: cover;
     width: 30vh;
@@ -346,11 +387,11 @@ footer>a {
     margin-top: 10rem;
 }
 
-.MVC_model:hover{
+.MVC_model:hover {
     cursor: pointer;
 }
 
-.MVC_model::after{
+.MVC_model::after {
     content: "MVC Model";
     opacity: 0;
     visibility: hidden;
@@ -363,6 +404,7 @@ footer>a {
     font-size: large;
     transition: opacity 1s ease-in-out;
 }
+
 .MVC_model:hover::after {
     opacity: 1;
     visibility: visible;
@@ -380,7 +422,7 @@ footer>a {
     grid-template-columns: 1fr 1fr;
 }
 
-.container_update>div>p{
+.container_update>div>p {
     font-size: large;
     font-weight: bold;
     height: 3rem;
@@ -388,7 +430,7 @@ footer>a {
     margin-left: 2rem;
 }
 
-.parent_ul{
+.parent_ul {
     list-style-type: none;
     height: 1.6rem;
     font-size: large;
@@ -397,14 +439,14 @@ footer>a {
 }
 
 
-.child_ul{
+.child_ul {
     list-style-type: none;
     height: 1.6rem;
     font-weight: 400;
     margin-left: 1.6rem;
 }
 
-.container_update>:first-child{
+.container_update>:first-child {
     background-image: url(../image/business.jpg);
     background-size: cover;
 }
@@ -414,4 +456,23 @@ footer>a {
     background-color: LightYellow;
 
     position: static;
+}
+
+
+@media (max-width : 1200px) {
+    .root {
+        margin: auto;
+
+        height: 100vh;
+        width: 1200px;
+
+        font-family: 'Poor Story', cursive;
+    }
+
+    .home_title {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
