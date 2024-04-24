@@ -224,6 +224,10 @@ footer>a {
     background-image: url("../image/desk-593327_1920.jpg");
 }
 
+.about_category{
+    margin-top: 10rem;
+}
+
 .about_category1 {
     height: 10%;
     margin-left: 2rem;
@@ -233,7 +237,7 @@ footer>a {
 
 .about_category1>p {
     height: 1.6rem;
-    margin-top: 10rem;
+    
     margin-bottom: 1rem;
     font-size: large;
     font-weight: bold;
@@ -248,7 +252,7 @@ footer>a {
 
 .about_category2>p {
     margin-bottom: 1rem;
-    height: 1.6rem;
+    height: 1rem;
     font-size: large;
     font-weight: bold;
 }
