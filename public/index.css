@@ -291,8 +291,8 @@ footer>a {
 .about_category4>p {
     font-size: large;
     font-weight: bold;
-    height: 3rem;
-    margin-top: 3rem;
+    /* height: 3rem; */
+    /* margin-top: 3rem; */
     margin-left: 2rem;
 }
 
