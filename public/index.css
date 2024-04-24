@@ -303,7 +303,7 @@ footer>a {
     font-weight: bold;
     /* height: 3rem; */
     /* margin-top: 3rem; */
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 
 .study_gridContainor1 {
@@ -497,5 +497,9 @@ footer>a {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .about_category_picture{
+        display: none;
     }
 }
