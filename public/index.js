@@ -30,7 +30,7 @@ function header_About() {
         });
     }
 }
-function header_Project() {
+function header_Skills() {
     var element = document.getElementById("sec03");
     if (element) {
         element.scrollIntoView({
@@ -55,13 +55,13 @@ function header_Baord() {
     }
 }
 
-window.onload = function () {
-    firebase.storage().ref('desk-593327_1920.jpg').getDownloadURL()
-        .then((url) => {
-            console.log('다운로드 URL:', url);
-            // 이미지를 표시하는 등의 작업 수행
-        })
-        .catch((error) => {
-            console.error('다운로드 URL을 가져오는 동안 오류가 발생했습니다:', error);
-        });
-};
+// window.onload = function () {
+//     firebase.storage().ref('desk-593327_1920.jpg').getDownloadURL()
+//         .then((url) => {
+//             console.log('다운로드 URL:', url);
+//             // 이미지를 표시하는 등의 작업 수행
+//         })
+//         .catch((error) => {
+//             console.error('다운로드 URL을 가져오는 동안 오류가 발생했습니다:', error);
+//         });
+// };

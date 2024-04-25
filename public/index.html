@@ -19,18 +19,21 @@
 <body>
     <div class="root">
         <div class="container_head" id="sec01">
+            <!-- 상단 메뉴 -->
             <header>
                 <div>
                     <span class="header_portfolio" onclick="header_portfolio()">Sam's portfolio</span>
                     <ul>
                         <li><span class="header_title" onclick="header_portfolio()">Home</span></li>
                         <li><span class="header_title" onclick="header_About()">About</span></li>
-                        <li><span class="header_title" onclick="header_Project()">Project</span></li>
-                        <li><span class="header_title" onclick="header_Update()">Update</span></li>
-                        <li><span class="header_title" onclick="header_Baord()">Board</span></li>
+                        <li><span class="header_title" onclick="header_Skills()">Skills</span></li>
+                        <li><span class="header_title" onclick="header_Update()">Project</span></li>
+                        <li><span class="header_title" onclick="header_Baord()">Introduction</span></li>
                     </ul>
                 </div>
             </header>
+
+            <!-- 섹션 1 -->
             <section class="home">
                 <div class="home_title">Hello World!</div>
                 <div class="home_title">안녕하세요. 백엔드, 프론트엔드 풀스택 신입 개발자 최승삼입니다.</div>
@@ -46,18 +49,33 @@
                 <!-- <a href="#">winsam003@gmail.com</a> -->
             </footer>
         </div>
+
+        <!-- 섹션 2 -->
         <section class="container_about" id="sec02">
-            <div></div>
+            <div class="about_pictureBox">
+                <div class="about_picture"></div>
+                <div class="Introduction">
+                    <span class="Introduction_info">🎁 1994.10.22</span>
+                    <span class="Introduction_info">🏡 경기도 성남시 자혜로 8번길 7-1</span>
+                    <span class="Introduction_info">📧 winsam003@gmail.com</span>
+                </div>
+            </div>
             <div>
                 <div class="about_category">
                     <div class="about_category1">
-                        <p>About</p>
-                        <ul >
-                            <li class="about_category1_li">안녕하세요. 미래를 개척하는 개발자를 최승삼입니다. 제 포트폴리오에 관심을 가져주셔서 감사합니다.</li>
-                        </ul>
+                        <p>🤵 About</p>
+                        <div class="about_InfoBox">
+                            <span class="About_picture"></span>
+                            <ul>
+                                <li class="about_category1_li">안녕하세요. 미래를 개척하는 개발자를 최승삼입니다. 제 포트폴리오에 관심을 가져주셔서 감사합니다.
+                                </li>
+                                <li class="about_category1_li about_category_1200px">🎁 1994.10.22</li>
+                                <li class="about_category1_li about_category_1200px">📧 winsam003@gmail.com</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="about_category2">
-                        <p>Education</p>
+                        <p>🎓 Education</p>
                         <ul>
                             <li>양영디지털고등학교 &#40;네트워크과&#41;</li>
                             <li>한국기술교육대학교 &#40;컴퓨터공학과&#41; &#42; 집안사정으로 중퇴</li>
@@ -65,7 +83,7 @@
                         </ul>
                     </div>
                     <div class="about_category3">
-                        <p>Licenses</p>
+                        <p>📝 Licenses</p>
                         <ul>
                             <li>정보기기운용기능사 &#40;2012&#41;</li>
                             <li>OPIC intermediate Mid 1급 &#40;2023&#41;</li>
@@ -73,54 +91,189 @@
                         </ul>
                     </div>
                     <div class="about_category4">
-                        <p>Certificate</p>
+                        <p>💻 Certificate</p>
                         <ul>
                             <li>한국골드메달 &#40;2017.01 ~ 2021.04 &#47; 서비스직 &#47; 식자재관리 &#47; 프리랜서 &#41; 약 4년 4개월</li>
-                            <li>비스토스 &#40;2021.07 ~ 2023.10 &#47; 의료기기 QC팀 &#47; 최종출하검사 &#47; 자재수입검사 &#47; 클레임관리 &#47; 중국협력사 관리 &#41; 약 2년 4개월 test4</li>
+                            <li>비스토스 &#40;2021.07 ~ 2023.10 &#47; 의료기기 QC팀 &#47; 최종출하검사 &#47; 자재수입검사 &#47; 클레임관리 &#47;
+                                중국협력사 관리 &#41; 약 2년 4개월 test4</li>
                         </ul>
-                    </div>
-            </div>
-            </div>
-        </section>
-        <section class="container_project" id="sec03">
-            <div>
-                <div class="MVC_model" onclick="MVC_model()"></div>
-                <div class="MVC_model"></div>
-                <div class="about_category4">
-                    <p>Study</p>
-                    <div class="study_gridContainor1">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="study_gridContainor2">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
                     </div>
                 </div>
             </div>
-            <div></div>
         </section>
-        <section class="container_update" id="sec04">
-            <div></div>
-            <div>
-                <p>Portfolio Update</p>
-                <ul class="parent_ul">
-                    <li>1. firebase, github 서버 기반 Beta version 포트폴리오 홈페이지 오픈&#40;Beta 1.0&#41;
-                        <ul class="child_ul">
-                            <li>1-1&#41; Home, About, Project, Update 내용 추가&#40;Beta 1.1&#41;</li>
-                            <li>1-2&#41; firebase 기반 게시판&#40;Board&#41; 개설예정&#40;Beta 1.2&#41;</li>
-                        </ul>
-                    </li>
-                </ul>
+
+        <!-- 섹션 3 -->
+        <section class="container_skills" id="sec03">
+            <div class="skills_FrontBox">
+                <div class="skills_Front_title">💻 Front Skills</div>
+                <div class="skills_Front">
+                    <div class="skills_Front_Detail">
+                        <div class="skills_Back_imageBox">
+                            <span class="skills_Front_image1"></span>
+                        </div>
+                        <span class="skills_Front_info">
+                            <ul>
+                                <li class="skills_Front_detail">useState, useEffect등 hook을 사용하는데 익숙합니다.</li>
+                                <li class="skills_Front_detail">모듈화의 개념을 이해하고 적용해본 경험이 있습니다.</li>
+                                <li class="skills_Front_detail">JSX를 사용하는데 익숙합니다.</li>
+                                <li class="skills_Front_detail">구글 지도 라이브러리, EmailJS 라이브러리, pagenation 라이브러리 등 리액트
+                                    라이브러리를 활용해본 경험이 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_Front_Detail">
+                        <div class="skills_Back_imageBox">
+                            <span class="skills_Front_image2"></span>
+                        </div>
+                        <span class="skills_Front_info">
+                            <ul>
+                                <li class="skills_Front_detail">동기, 비동기를 이해하고 있습니다.</li>
+                                <li class="skills_Front_detail">함수, 람다식 등을 사용하는데 익숙합니다.</li>
+                                <li class="skills_Front_detail">onClick, onChange 등 많은 이벤트 기능을 사용해본 경험이 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_Front_Detail">
+                        <div class="skills_Back_imageBox">
+                            <span class="skills_Front_image3"></span>
+                        </div>
+                        <span class="skills_Front_info">
+                            <ul>
+                                <li class="skills_Front_detail">각 태그의 속성들의 특징을 이해하고 사용할 수 있습니다.</li>
+                                <li class="skills_Front_detail">다운드랍 메뉴, 모달창 등을 만들 수 있습니다.</li>
+                                <li class="skills_Front_detail">css로 페이징을 해본 경험이 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills_BackBox">
+                <div class="skills_Back_title">🖥 Back Skills</div>
+                <div class="skills_Back">
+                    <div class="skills_Back_Detail">
+                        <div class="skills_Back_imageBox">
+                            <span class="skills_Back_image1"></span>
+                        </div>
+                        <span class="skills_Back_info">
+                            <ul>
+                                <li>배열과 함수를 이해하고 사용할 수 있습니다.</li>
+                                <li>객체를 선언하고 활용할 수 있습니다.</li>
+                                <li>interface와 상속을 사용 할 수 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_Back_Detail">
+                        <div class="skills_Back_imageBox">
+                            <span class="skills_Back_image"></span>
+                        </div>
+                        <span class="skills_Back_info">
+                            <ul>
+                                <li>SpringLegacy, SpringBoot 모두 사용하여 간단한 홈페이지를 구축해본 경험이 있습니다.</li>
+                                <li>MVC 전자정부프레임워크에 대해서 이해하고 구축한 경험이 있습니다.</li>
+                                <li>RestAPI를 활용해서 데이터를 프론트, 백에서 데이터를 전송하며 구축해본 경험이 있습니다.</li>
+                                <li>CORS처리를 해본 경험이 있습니다. &#40;ApiCall&#41;</li>
+                                <li>JSP로 Spring에서 View를 구축할 수 있습니다.</li>
+                                <li>EL, JSTL 문법을 사용할 수 있습니다.</li>
+                                <li>SpringSecurity를 활용해서 Token JWT 필터 적용으로 권한 설정을 해본 경험이 있습니다.</li>
+                                <li>Password Decrypt를 사용해서 로그인 시 패스워드를 암호화 하여 보관하여 구축해본 경험이 있습니다.</li>
+                                <li>롬복, log4j 등의 라이브러리를 주입해서 사용해본 경험이 있습니다.</li>
+                                <li>카카오톡 주소찾기 API, EmailJS API 등 오픈소스 API를 활용해본 경험이 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_Back_Detail">
+                        <div class="skills_Back_imageBox">
+                            <span class="skills_Back_image3"></span>
+                        </div>
+                        <span class="skills_Back_info">
+                            <ul>
+                                <li>JPA, QueryDSL, JPQL 등의 문법을 사용해본 경험이 있습니다.</li>
+                                <li>JPA를 활용해서 Join, 서브쿼리 등의 쿼리문을 작성해본 경험이 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_Back_Detail">
+                        <div class="skills_Back_imageBox">
+                            <span class="skills_Back_image4"></span>
+                        </div>
+                        <span class="skills_Back_info">
+                            <ul>
+                                <li>XML을 활용해서 쿼리문을 만들어본 경험이 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills_ETCBox">
+                <div class="skills_ETC_title">💾 DB and ETC Skills</div>
+                <div class="skills_ETC">
+                    <div class="skills_ETC_Detail">
+                        <div class="skills_ETC_imageBox">
+                            <span class="skills_ETC_image1"></span>
+                        </div>
+                        <span class="skills_ETC_info">
+                            <ul>
+                                <li>MySQL을 사용해서 12개 테이블 규모의 프로젝트를 구현해본 경험이 있습니다. &#40;Sports-Complex 프로젝트&#41;</li>
+                                <li>자바와 MySQL을 JDBC를 활용해 연결해본 경험이 있습니다. </li>
+                                <li>Join, 서브쿼리등을 작성해본 경험이 있습니다.  </li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_ETC_Detail">
+                        <div class="skills_ETC_imageBox">
+                            <span class="skills_ETC_image2"></span>
+                        </div>
+                        <span class="skills_ETC_info">
+                            <ul>
+                                <li>Oracle DB으로 SQL을 배우고 SQL 구문에 대해서 익숙해졌습니다.</li>
+                                <li>Oracle DB으로 문자열을 나누거나 찾아본 경험이 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_ETC_Detail">
+                        <div class="skills_ETC_imageBox">
+                            <span class="skills_ETC_image3"></span>
+                        </div>
+                        <span class="skills_ETC_info">
+                            <ul>
+                                <li>Github를 활용해서 약 30개 규모의 페이지를 가지고있는 프로젝트의 버전관리를 해본 경험이 있습니다.</li>
+                                <li>VSC의 확장 프로그램을 활용해서 Git 버전관리를 할 수 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="container_board" id="sec05"></section>
+
+        <!-- 섹션 4 -->
+        <section class="container_project" id="sec04">
+            <div class="project_pictureBox">
+                <div class="project_picture1">사진1</div>
+                <div class="project_picture2">사진2</div>
+            </div>
+            <div class="project_infoBox">
+                <div class="project_titleBox">
+                    <div class="project_title">✨ Project 1</div>
+                    <div class="project_subtitle">
+                        <span><a href="https://github.com/winsam003/Sports-complex.git">FitNest 체육복합시설</a></span>
+                    </div>
+                </div>
+                <div class="project_infoBox">
+                    <div class="project_info_title">🌟 FitNest 체육복합시설 프로젝트의 특징</div>
+                    <ul class="project_info_contentsBox">
+                        <li class="project_info_contents">그린컴퓨터학원 풀스택 프로젝트</li>
+                        <li class="project_info_contents">AWS 배포환경 구축</li>
+                        <li class="project_info_contents">JWT Token 활용, SpringSecurity 환경으로 권한설정 구축</li>
+                        <li class="project_info_contents">모든 게시판 CRUD 구성</li>
+                        <li class="project_info_contents">결제 API, 주소찾기 API 등 오픈소스 API 활용</li>
+                        <li class="project_info_contents">무결성 검사 구축</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 섹션 5 -->
+        <section class="container_Introduction" id="sec05"></section>
     </div>
 </body>
 
