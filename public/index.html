@@ -24,30 +24,32 @@
                 <div>
                     <span class="header_portfolio" onclick="header_portfolio()">Sam's portfolio</span>
                     <ul>
-                        <li><span class="header_title" onclick="header_portfolio()">Home</span></li>
+                        <li><span class="header_title" onclick="header_portfolio()">Home1</span></li>
                         <li><span class="header_title" onclick="header_About()">About</span></li>
                         <li><span class="header_title" onclick="header_Skills()">Skills</span></li>
-                        <li><span class="header_title" onclick="header_Update()">Project</span></li>
-                        <li><span class="header_title" onclick="header_Baord()">Introduction</span></li>
+                        <li><span class="header_title" onclick="header_Update()">Project1</span></li>
+                        <li><span class="header_title" onclick="header_Baord()">Project2</span></li>
                     </ul>
                 </div>
             </header>
 
             <!-- 섹션 1 -->
             <section class="home">
+                <!-- <div> -->
                 <div class="home_title">Hello World!</div>
                 <div class="home_title">안녕하세요. 백엔드, 프론트엔드 풀스택 신입 개발자 최승삼입니다.</div>
-                <div class="home_title home_LearnMore">
+                <!-- <div class="home_title home_LearnMore">
                     <span class="home_LearnMore2" onclick="header_About()">Learn more</span>
-                </div>
+                </div> -->
+                <!-- </div> -->
+                <footer>
+                    <p>contact me</p>
+                    <!-- <i class="fa-brands fa-google"></i> -->
+                    <i class="fa-brands fa-github" onclick="github()"></i>
+                    <i class="fa-brands fa-blogger" onclick="blogger()"></i>
+                    <!-- <a href="#">winsam003@gmail.com</a> -->
+                </footer>
             </section>
-            <footer>
-                <p>contact me</p>
-                <!-- <i class="fa-brands fa-google"></i> -->
-                <i class="fa-brands fa-github" onclick="github()"></i>
-                <i class="fa-brands fa-blogger" onclick="blogger()"></i>
-                <!-- <a href="#">winsam003@gmail.com</a> -->
-            </footer>
         </div>
 
         <!-- 섹션 2 -->
@@ -215,7 +217,7 @@
                             <ul>
                                 <li>MySQL을 사용해서 12개 테이블 규모의 프로젝트를 구현해본 경험이 있습니다. &#40;Sports-Complex 프로젝트&#41;</li>
                                 <li>자바와 MySQL을 JDBC를 활용해 연결해본 경험이 있습니다. </li>
-                                <li>Join, 서브쿼리등을 작성해본 경험이 있습니다.  </li>
+                                <li>Join, 서브쿼리등을 작성해본 경험이 있습니다. </li>
                             </ul>
                         </span>
                     </div>
@@ -248,15 +250,26 @@
         <!-- 섹션 4 -->
         <section class="container_project" id="sec04">
             <div class="project_pictureBox">
-                <div class="project_picture1">사진1</div>
-                <div class="project_picture2">사진2</div>
+                <div class="project_picture1"></div>
             </div>
             <div class="project_infoBox">
                 <div class="project_titleBox">
-                    <div class="project_title">✨ Project 1</div>
+                    <div class="project_title">✨ Project 1 : FitNest 체육복합시설</div>
                     <div class="project_subtitle">
-                        <span><a href="https://github.com/winsam003/Sports-complex.git">FitNest 체육복합시설</a></span>
+                        <ul>
+                            <li class="project_subtitle_li"><a
+                                    href="https://github.com/winsam003/Sports-complex.git">FitNest 체육복합시설 Git</a></li>
+                            <li class="project_subtitle_li"><a
+                                    href="https://velog.io/@winsam003/series/FitNest%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">구현
+                                    관련 Blog</a></li>
+                        </ul>
                     </div>
+                </div>
+                <div class="project_info_subinfoBox">
+                    <div class="project_info_subinfo">🌟 Project 소개</div>
+                    <ul class="project_info_contentsBox">
+                        <li>성남시에서 신규 체육시설을 건립했고 저희 회사가 관리 웹 프로그램을 수주했다는 컨셉으로 만든 프로젝트입니다.</li>
+                    </ul>
                 </div>
                 <div class="project_infoBox">
                     <div class="project_info_title">🌟 FitNest 체육복합시설 프로젝트의 특징</div>
@@ -267,13 +280,65 @@
                         <li class="project_info_contents">모든 게시판 CRUD 구성</li>
                         <li class="project_info_contents">결제 API, 주소찾기 API 등 오픈소스 API 활용</li>
                         <li class="project_info_contents">무결성 검사 구축</li>
+                        <li class="project_info_contents">회원관리, 직원관리, 강의&#47;대관&#47;주차 신청관리, 사용자&#47;관리자 구분 구성</li>
+                    </ul>
+                </div>
+                <div class="project_environmentsBox">
+                    <div class="project_info_title">🌟 Project 사용 환경</div>
+                    <ul class="project_info_contentsBox">
+                        <li class="project_info_contents">전자정부프레임워크 개발자 교육 교재 V4.0.0</li>
+                        <li class="project_info_contents">React 18.3.0</li>
+                        <li class="project_info_contents">SpringBoot 2.7.17</li>
+                        <li class="project_info_contents">JAVA 11</li>
+                        <li class="project_info_contents">Maven</li>
                     </ul>
                 </div>
             </div>
         </section>
 
         <!-- 섹션 5 -->
-        <section class="container_Introduction" id="sec05"></section>
+        <section class="container_project2" id="sec05">
+            <div class="project_pictureBox2">
+                <div class="project_picture2"></div>
+            </div>
+            <div class="project_infoBox">
+                <div class="project_titleBox">
+                    <div class="project_title">✨ Project 2 : CookieRun</div>
+                    <div class="project_subtitle">
+                        <ul>
+                            <li class="project_subtitle_li"><a
+                                    href="https://github.com/simsim916/coinJung_CookieRun.git">CookieRun Git</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project_info_subinfoBox">
+                    <div class="project_info_subinfo">🌟 Project 소개</div>
+                    <ul class="project_info_contentsBox">
+                        <li>초창기 프로젝트로 css와 html으로만 구현한 CookieRun 게임사이트 홈페이지입니다.</li>
+                        <li>팀에서 게시판 부분을 맡아서 프로젝트를 진행했습니다.</li>
+                    </ul>
+                </div>
+                <div class="project_infoBox">
+                    <div class="project_info_title">🌟 CookieRun 프로젝트의 특징</div>
+                    <ul class="project_info_contentsBox">
+                        <li class="project_info_contents">그린컴퓨터학원 Front 프로젝트</li>
+                        <li class="project_info_contents">공지사항, 자유게시판 부분의 페이지 구현</li>
+                        <li class="project_info_contents">JS를 활용해서 페이지네이션 구현</li>
+                        <li class="project_info_contents">JSON 형태의 더미 데이터를 만들어서 데이터를 구현</li>
+                    </ul>
+                </div>
+                <div class="project_environmentsBox">
+                    <div class="project_info_title">🌟 Project 사용 환경</div>
+                    <ul class="project_info_contentsBox">
+                        <li class="project_info_contents">VisualStudioCode</li>
+                        <li class="project_info_contents">HTML</li>
+                        <li class="project_info_contents">CSS</li>
+                        <li class="project_info_contents">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 
