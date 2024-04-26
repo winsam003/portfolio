@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js"></script>
+    <script src="firebase.js"></script>
     <title>Hello Sam's portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
@@ -14,6 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Poor+Story&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
 </head>
 
 <body>
@@ -69,7 +73,7 @@
                         <div class="about_InfoBox">
                             <span class="About_picture"></span>
                             <ul>
-                                <li class="about_category1_li">안녕하세요. 미래를 개척하는 개발자를 최승삼입니다. 제 포트폴리오에 관심을 가져주셔서 감사합니다.
+                                <li class="about_category1_li">안녕하세요. 미래를 개척하는 개발자 최승삼입니다. 제 포트폴리오에 관심을 가져주셔서 감사합니다.
                                 </li>
                                 <li class="about_category1_li about_category_1200px">🎁 1994.10.22</li>
                                 <li class="about_category1_li about_category_1200px">📧 winsam003@gmail.com</li>
@@ -293,6 +297,12 @@
                         <li class="project_info_contents">Maven</li>
                     </ul>
                 </div>
+                <!-- <div class="project_environmentsBox">
+                    <div class="project_info_title">🌟 Project 관련 파일</div>
+                    <ul class="project_info_contentsBox">
+                        <li class="project_info_contents"><button onclick="downloadFile()">파일 다운로드</button></li>
+                    </ul>
+                </div> -->
             </div>
         </section>
 

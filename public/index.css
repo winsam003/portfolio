@@ -1,7 +1,7 @@
 html {
     background-color: #E6E6FA;
-    scroll-behavior: smooth;
-
+    overflow-x: hidden;
+    
 }
 
 body{
@@ -25,6 +25,8 @@ header {
     z-index: 1;
 
     transform: translate(-10px, -14px);
+
+    /* background-color: #AFEEEE; */
 
 }
 
@@ -662,6 +664,9 @@ footer>a {
 
 .project_picture1 {
     background-image: url("./image/sportscomplex.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* .project_picture2{
