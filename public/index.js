@@ -3,9 +3,6 @@
 
 
 
-function fa_google(){
-    window.open('winsam003@gmail.com');
-}
 function github(){
     window.open('https://github.com/winsam003');
 }
@@ -13,9 +10,17 @@ function blogger(){
     window.open('https://velog.io/@winsam003/posts');
 }
 
-function MVC_model(){
-    window.open('https://github.com/simsim916/coinJung_CookieRun');
+
+function SportsComplexGit() {
+    window.open('https://github.com/winsam003/Sports-complex.git');
 }
+function SportsComplexblog() {
+    window.open('https://velog.io/@winsam003/series/FitNest%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8');
+}
+function cookieRun() {
+    window.open('https://github.com/simsim916/coinJung_CookieRun.git');
+}
+
 
 function header_portfolio() {
     var element = document.getElementById("sec01");
@@ -60,14 +65,14 @@ function header_Baord() {
 
 // Firebase 프로젝트의 구성 정보
 // const firebaseConfig = {
-//     apiKey: "AIzaSyClgtXm1tcwibw7Fm7B_Yk0YeYNiUqioLc",
-//     authDomain: "sam-s-portfolio-48477.firebaseapp.com",
-//     databaseURL: "https://sam-s-portfolio-48477-default-rtdb.asia-southeast1.firebasedatabase.app",
-//     projectId: "sam-s-portfolio-48477",
-//     storageBucket: "sam-s-portfolio-48477.appspot.com",
-//     messagingSenderId: "412846213805",
-//     appId: "1:412846213805:web:1dbfccc7b4d0a0afed1424",
-//     measurementId: "G-WG3YKPQ4L2"
+//     apiKey: "AoLc",
+//     authDomain: ".com",
+//     databaseURL: "htpp",
+//     projectId: "sa,
+//     storageBucket: "samspot.com",
+//     messagingSenderId: "405",
+//     appId: "1:4128b4d0a0afed1424",
+//     measurementId: "4L2"
 // };
 
 // // Firebase 초기화
@@ -111,12 +116,12 @@ function header_Baord() {
 
 window.addEventListener('scroll', function () {
     var scrollContent = document.getElementsByTagName('header')[0];
-    if (window.scrollY > 200) { // Adjust 200 to your desired scroll position
-        scrollContent.style.opacity = '0'; // 요소의 투명도를 0으로 설정하여 천천히 사라지도록 합니다.
-        scrollContent.style.pointerEvents = 'none'; // 요소의 클릭 이벤트를 비활성화하여 사용자가 클릭할 수 없도록 합니다.
+    if (window.scrollY > 200) { 
+        scrollContent.style.opacity = '0'; 
+        scrollContent.style.pointerEvents = 'none'; 
     } else {
-        scrollContent.style.opacity = '1'; // 요소의 투명도를 0으로 설정하여 천천히 사라지도록 합니다.
-        scrollContent.style.pointerEvents = 'auto'; // 요소의 클릭 이벤트를 비활성화하여 사용자가 클릭할 수 없도록 합니다.
+        scrollContent.style.opacity = '1'; 
+        scrollContent.style.pointerEvents = 'auto'; 
     }
 });
 

@@ -744,6 +744,13 @@ footer>a {
     height: 90%;
 }
 
+.project_subtitle_url{
+    font-size: medium;
+    color: blue;
+    text-decoration: underline;
+
+    cursor: pointer;
+}
 
 
 
