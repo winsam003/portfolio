@@ -8,47 +8,6 @@ body {
     margin: 0;
 }
 
-#scrollToTopBtn {
-    opacity: 0;
-    /* 초기에는 화살표 투명도를 0으로 설정하여 숨김 */
-    visibility: hidden;
-    /* 초기에는 화살표를 보이지 않도록 설정 */
-    position: fixed;
-    /* 화면에 고정 */
-    bottom: 20px;
-    /* 하단 여백 설정 */
-    right: 20px;
-    /* 우측 여백 설정 */
-    width: 40px;
-    height: 40px;
-    background-color: #333;
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    line-height: 40px;
-    /* 수직 가운데 정렬 */
-    border-radius: 50%;
-    /* 원 모양으로 스타일링 */
-    cursor: pointer;
-    /* 마우스를 올리면 포인터 모양으로 변경 */
-    z-index: 999;
-    /* 다른 요소들 위에 표시 */
-
-    transition: opacity 0.5s ease, visibility 0.5s ease;
-    /* 투명도와 보이기/숨기기 애니메이션 효과 적용 */
-}
-
-#scrollToTopBtn:hover {
-    background-color: #555;
-    /* 마우스를 올리면 배경 색 변경 */
-}
-
-#scrollToTopBtn.visible {
-    opacity: 1;
-    /* visible 클래스가 추가되면 투명도를 1로 설정하여 나타남 */
-    visibility: visible;
-    /* visible 클래스가 추가되면 화살표를 보이도록 설정 */
-}
 
 .root {
     margin: auto;
@@ -67,12 +26,7 @@ header {
 
     z-index: 1;
 
-    transform: translate(-10px, -14px);
 
-    opacity: 1;
-    /* 초기 투명도 설정 */
-    transition: opacity 0.5s ease;
-    /* 투명도가 변할 때 애니메이션 효과 적용 */
 
 }
 

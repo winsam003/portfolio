@@ -114,35 +114,35 @@ function header_Baord() {
 // }
 
 
-window.addEventListener('scroll', function () {
-    var scrollContent = document.getElementsByTagName('header')[0];
-    if (window.scrollY > 200) { 
-        scrollContent.style.opacity = '0'; 
-        scrollContent.style.pointerEvents = 'none'; 
-    } else {
-        scrollContent.style.opacity = '1'; 
-        scrollContent.style.pointerEvents = 'auto'; 
-    }
-});
+// window.addEventListener('scroll', function () {
+//     var scrollContent = document.getElementsByTagName('header')[0];
+//     if (window.scrollY > 200) { 
+//         scrollContent.style.opacity = '0'; 
+//         scrollContent.style.pointerEvents = 'none'; 
+//     } else {
+//         scrollContent.style.opacity = '1'; 
+//         scrollContent.style.pointerEvents = 'auto'; 
+//     }
+// });
 
 
-window.addEventListener('scroll', function () {
-    var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+// window.addEventListener('scroll', function () {
+//     var scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-    // 페이지 상단으로 스크롤되면 화살표 나타내기
-    if (window.scrollY > 100) { // 원하는 스크롤 위치로 조정
-        scrollToTopBtn.classList.add('visible'); // visible 클래스 추가
-    } else {
-        scrollToTopBtn.classList.remove('visible'); // visible 클래스 제거
-    }
-});
+//     // 페이지 상단으로 스크롤되면 화살표 나타내기
+//     if (window.scrollY > 100) { // 원하는 스크롤 위치로 조정
+//         scrollToTopBtn.classList.add('visible'); // visible 클래스 추가
+//     } else {
+//         scrollToTopBtn.classList.remove('visible'); // visible 클래스 제거
+//     }
+// });
 
-window.addEventListener('DOMContentLoaded', function () {
-    // 화살표 클릭 시 페이지 상단으로 부드럽게 스크롤
-    document.getElementById('scrollToTopBtn').addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth' // 부드러운 스크롤 효과
-        });
-    });
-});
+// window.addEventListener('DOMContentLoaded', function () {
+//     // 화살표 클릭 시 페이지 상단으로 부드럽게 스크롤
+//     document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+//         window.scrollTo({
+//             top: 0,
+//             behavior: 'smooth' // 부드러운 스크롤 효과
+//         });
+//     });
+// });
