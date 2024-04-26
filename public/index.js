@@ -109,11 +109,35 @@ function header_Baord() {
 // }
 
 
-// window.addEventListener('scroll', function () {
-//     var scrollContent = document.getElementsByClassName('header_portfolio')[0];
-//     if (window.scrollY > 200) { // Adjust 200 to your desired scroll position
-//         scrollContent.style.opacity = '.5';
-//     } else {
-//         scrollContent.style.opacity = '1'; // Or whatever the default display should be
-//     }
-// });
+window.addEventListener('scroll', function () {
+    var scrollContent = document.getElementsByTagName('header')[0];
+    if (window.scrollY > 200) { // Adjust 200 to your desired scroll position
+        scrollContent.style.opacity = '0'; // 요소의 투명도를 0으로 설정하여 천천히 사라지도록 합니다.
+        scrollContent.style.pointerEvents = 'none'; // 요소의 클릭 이벤트를 비활성화하여 사용자가 클릭할 수 없도록 합니다.
+    } else {
+        scrollContent.style.opacity = '1'; // 요소의 투명도를 0으로 설정하여 천천히 사라지도록 합니다.
+        scrollContent.style.pointerEvents = 'auto'; // 요소의 클릭 이벤트를 비활성화하여 사용자가 클릭할 수 없도록 합니다.
+    }
+});
+
+
+window.addEventListener('scroll', function () {
+    var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+    // 페이지 상단으로 스크롤되면 화살표 나타내기
+    if (window.scrollY > 100) { // 원하는 스크롤 위치로 조정
+        scrollToTopBtn.classList.add('visible'); // visible 클래스 추가
+    } else {
+        scrollToTopBtn.classList.remove('visible'); // visible 클래스 제거
+    }
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+    // 화살표 클릭 시 페이지 상단으로 부드럽게 스크롤
+    document.getElementById('scrollToTopBtn').addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // 부드러운 스크롤 효과
+        });
+    });
+});
