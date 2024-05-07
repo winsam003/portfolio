@@ -114,16 +114,16 @@ function header_Baord() {
 // }
 
 
-// window.addEventListener('scroll', function () {
-//     var scrollContent = document.getElementsByTagName('header')[0];
-//     if (window.scrollY > 200) { 
-//         scrollContent.style.opacity = '0'; 
-//         scrollContent.style.pointerEvents = 'none'; 
-//     } else {
-//         scrollContent.style.opacity = '1'; 
-//         scrollContent.style.pointerEvents = 'auto'; 
-//     }
-// });
+window.addEventListener('scroll', function () {
+    var scrollContent = document.getElementsByTagName('header')[0];
+    if (window.scrollY > 200) { 
+        scrollContent.style.opacity = '0'; 
+        scrollContent.style.pointerEvents = 'none'; 
+    } else {
+        scrollContent.style.opacity = '1'; 
+        scrollContent.style.pointerEvents = 'auto'; 
+    }
+});
 
 
 // window.addEventListener('scroll', function () {
