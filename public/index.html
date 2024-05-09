@@ -5,12 +5,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-storage.js"></script>
-    <script src="firebase.js"></script>
     <title>Hello Sam's portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.11.1/firebase-analytics.js"></script>
+
     <script src="index.js"></script>
+    <!-- <script src="firebase.js"></script> -->
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -74,8 +75,7 @@
                         <div class="about_InfoBox">
                             <span class="About_picture"></span>
                             <ul>
-                                <li class="about_category1_li">안녕하세요. 미래를 개척하는 개발자 최승삼입니다. 제 포트폴리오에 관심을 가져주셔서 감사합니다.
-                                </li>
+                                <li class="about_category1_li">안녕하세요. 미래를 개척하는 개발자 최승삼입니다. 제 포트폴리오에 관심을 가져주셔서 감사합니다.</li>
                                 <li class="about_category1_li about_category_1200px">🎁 1994.10.22</li>
                                 <li class="about_category1_li about_category_1200px">📧 winsam003@gmail.com</li>
                             </ul>
@@ -122,7 +122,7 @@
                             <ul>
                                 <li class="skills_Front_detail">useState, useEffect등 hook을 사용하는데 익숙합니다.</li>
                                 <li class="skills_Front_detail">모듈화의 개념을 이해하고 적용해본 경험이 있습니다.</li>
-                                <li class="skills_Front_detail">JSX를 사용하는데 익숙합니다.</li>
+                                <li class="skills_Front_detail skills_Front_detail_emphasize">JSX를 사용하는데 익숙합니다.</li>
                                 <li class="skills_Front_detail">구글 지도 라이브러리, EmailJS 라이브러리, pagenation 라이브러리 등 리액트
                                     라이브러리를 활용해본 경험이 있습니다.</li>
                             </ul>
@@ -136,7 +136,8 @@
                             <ul>
                                 <li class="skills_Front_detail">동기, 비동기를 이해하고 있습니다.</li>
                                 <li class="skills_Front_detail">함수, 람다식 등을 사용하는데 익숙합니다.</li>
-                                <li class="skills_Front_detail">onClick, onChange 등 많은 이벤트 기능을 사용해본 경험이 있습니다.</li>
+                                <li class="skills_Front_detail skills_Front_detail_emphasize">onClick, onChange 등 많은 이벤트 기능을 사용해본 경험이 있습니다.</li>
+                                <li class="skills_Front_detail">JavaScript로 페이징을 해본 경험이 있습니다.</li>
                             </ul>
                         </span>
                     </div>
@@ -148,7 +149,17 @@
                             <ul>
                                 <li class="skills_Front_detail">각 태그의 속성들의 특징을 이해하고 사용할 수 있습니다.</li>
                                 <li class="skills_Front_detail">다운드랍 메뉴, 모달창 등을 만들 수 있습니다.</li>
-                                <li class="skills_Front_detail">JavaScript로 페이징을 해본 경험이 있습니다.</li>
+                                <li class="skills_Front_detail skills_Front_detail_emphasize">CSS 시멘틱 구조를 이해하고 적용할 수 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_Front_Detail">
+                        <div class="skills_Back_imageBox">
+                            <span class="skills_Front_image4"></span>
+                        </div>
+                        <span class="skills_Front_info">
+                            <ul>
+                                <li class="skills_Front_detail skills_Front_detail_emphasize">DOM Tree 구조를 이해하고 웹팩을 활용해서 번들링을 해본 경험이 있습니다.</li>
                             </ul>
                         </span>
                     </div>
@@ -165,7 +176,7 @@
                             <ul>
                                 <li>배열과 함수를 이해하고 사용할 수 있습니다.</li>
                                 <li>객체를 선언하고 활용할 수 있습니다.</li>
-                                <li>interface와 상속을 사용 할 수 있습니다.</li>
+                                <li class="skills_Front_detail_emphasize">interface와 상속을 사용 할 수 있습니다.</li>
                             </ul>
                         </span>
                     </div>
@@ -176,7 +187,7 @@
                         <span class="skills_Back_info">
                             <ul>
                                 <li>SpringLegacy, SpringBoot 모두 사용하여 간단한 홈페이지를 구축해본 경험이 있습니다.</li>
-                                <li>MVC 전자정부프레임워크에 대해서 이해하고 구축한 경험이 있습니다.</li>
+                                <li class="skills_Front_detail_emphasize">MVC 전자정부프레임워크에 대해서 이해하고 구축한 경험이 있습니다.</li>
                                 <li>RestAPI를 활용해서 데이터를 프론트, 백에서 데이터를 전송하며 구축해본 경험이 있습니다.</li>
                                 <li>CORS처리를 해본 경험이 있습니다. &#40;ApiCall&#41;</li>
                                 <li>JSP로 Spring에서 View를 구축할 수 있습니다.</li>
@@ -195,7 +206,7 @@
                         <span class="skills_Back_info">
                             <ul>
                                 <li>JPA, QueryDSL, JPQL 등의 문법을 사용해본 경험이 있습니다.</li>
-                                <li>JPA를 활용해서 Join, 서브쿼리 등의 쿼리문을 작성해본 경험이 있습니다.</li>
+                                <li class="skills_Front_detail_emphasize">JPA를 활용해서 Join, 서브쿼리 등의 쿼리문을 작성해본 경험이 있습니다.</li>
                             </ul>
                         </span>
                     </div>
@@ -205,14 +216,15 @@
                         </div>
                         <span class="skills_Back_info">
                             <ul>
-                                <li>XML을 활용해서 쿼리문을 만들어본 경험이 있습니다.</li>
+                                <li class="skills_Front_detail_emphasize">XML을 활용해서 쿼리문을 만들어본 경험이 있습니다.</li>
+                                <li>MyBatise Bean등록 설정을 해본 경험이 있습니다.</li>
                             </ul>
                         </span>
                     </div>
                 </div>
             </div>
             <div class="skills_ETCBox">
-                <div class="skills_ETC_title">💾 DB and ETC Skills</div>
+                <div class="skills_ETC_title">💾 DB and etc Skills</div>
                 <div class="skills_ETC">
                     <div class="skills_ETC_Detail">
                         <div class="skills_ETC_imageBox">
@@ -220,7 +232,7 @@
                         </div>
                         <span class="skills_ETC_info">
                             <ul>
-                                <li>MySQL을 사용해서 12개 테이블 규모의 프로젝트를 구현해본 경험이 있습니다. &#40;Sports-Complex 프로젝트&#41;</li>
+                                <li class="skills_Front_detail_emphasize">MySQL을 사용해서 12개 테이블 규모의 프로젝트를 구현해본 경험이 있습니다. &#40;Sports-Complex 프로젝트&#41;</li>
                                 <li>자바와 MySQL을 JDBC를 활용해 연결해본 경험이 있습니다. </li>
                                 <li>Join, 서브쿼리등을 작성해본 경험이 있습니다. </li>
                             </ul>
@@ -243,8 +255,19 @@
                         </div>
                         <span class="skills_ETC_info">
                             <ul>
-                                <li>Github를 활용해서 약 30개 규모의 페이지를 가지고있는 프로젝트의 버전관리를 해본 경험이 있습니다.</li>
+                                <li class="skills_Front_detail_emphasize">Github를 활용해서 약 30개 규모의 페이지를 가지고있는 프로젝트의 버전관리를 해본 경험이 있습니다.</li>
+                                <li>Github를 활용해서 3명의 코드를 두 달 기간동안의 프로젝트의 버전관리를 해본 경험이 있습니다.</li>
                                 <li>VSC의 확장 프로그램을 활용해서 Git 버전관리를 할 수 있습니다.</li>
+                            </ul>
+                        </span>
+                    </div>
+                    <div class="skills_ETC_Detail">
+                        <div class="skills_ETC_imageBox">
+                            <span class="skills_ETC_image4"></span>
+                        </div>
+                        <span class="skills_ETC_info">
+                            <ul>
+                                <li class="skills_Front_detail_emphasize">AWS EC2 프리티어를 활용해서 프로젝트를 배포해본 경험이 있습니다.</li>
                             </ul>
                         </span>
                     </div>
@@ -264,13 +287,19 @@
                         <ul>
                             <li class="project_subtitle_li">
                                 <span>FitNest 체육복합시설 Git</span>
-                                <span
-                                    class="project_subtitle_url" onclick="SportsComplexGit()">&#40;https://github.com/winsam003/Sports-complex.git&#41;</span>
+                                <span class="project_subtitle_url"
+                                    onclick="SportsComplexGit()">&#40;https://github.com/winsam003/Sports-complex.git&#41;</span>
                             </li>
                             <li class="project_subtitle_li">
                                 <span>구현관련 Blog</span>
-                                <span
-                                    class="project_subtitle_url" onclick="SportsComplexblog()">&#40;https://velog.io/@winsam003/series/FitNest%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&#41;</span>
+                                <span class="project_subtitle_url"
+                                    onclick="SportsComplexblog()">&#40;https://velog.io/@winsam003/series/FitNest%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8&#41;</span>
+                            </li>
+                            <li class="project_subtitle_li">
+                                <span>AWS 배포 URL</span>
+                                <span class="project_subtitle_url"
+                                    onclick="SportsComplexAWS()">&#40;http://dbrghl-bucket.s3-website.ap-northeast-2.amazonaws.com/&#41;</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -300,12 +329,13 @@
                         <li class="project_info_contents">SpringBoot 2.7.17</li>
                         <li class="project_info_contents">JAVA 11</li>
                         <li class="project_info_contents">Maven</li>
+                        <li class="project_info_contents">AWS</li>
                     </ul>
                 </div>
                 <!-- <div class="project_environmentsBox">
                     <div class="project_info_title">🌟 Project 관련 파일</div>
                     <ul class="project_info_contentsBox">
-                        <li class="project_info_contents"><button onclick="downloadFile()">파일 다운로드</button></li>
+                        <li class="project_info_contents"><span onclick="downloadFile()">파일 다운로드</span></li>
                     </ul>
                 </div> -->
             </div>
@@ -323,7 +353,13 @@
                         <ul>
                             <li class="project_subtitle_li">
                                 <span>CookieRun Git</span>
-                                <span class="project_subtitle_url" onclick="SportsComplexGit()">&#40;https://github.com/simsim916/coinJung_CookieRun.git&#41;</span>
+                                <span class="project_subtitle_url"
+                                    onclick="cookieRunGit()">&#40;https://github.com/simsim916/coinJung_CookieRun.git&#41;</span>
+                            </li>
+                            <li class="project_subtitle_li">
+                                <span>CookieRun Git 배포 Page</span>
+                                <span class="project_subtitle_url"
+                                    onclick="cookieRunGitPage()">&#40;https://github.com/simsim916/coinJung_CookieRun.git&#41;</span>
                             </li>
                         </ul>
                     </div>

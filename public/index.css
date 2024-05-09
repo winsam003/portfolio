@@ -306,7 +306,7 @@ footer>a {
     list-style-type: circle;
     height: 1.6rem;
 
-    height: 3.5rem;
+    /* height: 3.5rem; */
 }
 
 .about_category2 {
@@ -423,6 +423,10 @@ footer>a {
     width: 100%;
 }
 
+.skills_Front_detail_emphasize{
+    font-weight: bold;
+}
+
 .skills_Front_info {
     display: flex;
     justify-content: flex-start;
@@ -449,6 +453,15 @@ footer>a {
 
 .skills_Front_image3 {
     background-image: url("./image/CSS.png");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.skills_Front_image4 {
+    background-image: url("./image/HTML.png");
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
@@ -561,7 +574,8 @@ footer>a {
 
 .skills_ETC_image1,
 .skills_ETC_image2,
-.skills_ETC_image3 {
+.skills_ETC_image3,
+.skills_ETC_image4 {
     background-position: center;
     background-repeat: no-repeat;
     width: 80px;
@@ -583,11 +597,16 @@ footer>a {
     background-size: contain;
 }
 
+.skills_ETC_image4 {
+    background-image: url("./image/AWS.png");
+    background-size: 75%;
+}
+
 
 
 .container_project {
     height: 100vh;
-    background-color: pink;
+    background-color: thistle;
 
     width: 100%;
 }
@@ -678,16 +697,16 @@ footer>a {
 
 .container_project2 {
     height: 100vh;
-    background-color: darkseagreen;
+    background-color: lightgreen;
 
     width: 100%;
 }
 
 .project_picture2 {
-    background-image: url("./image/cookieRun.jpg");
+    background-image: url("./image/cookieRun2.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 .project_pictureBox2 {

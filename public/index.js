@@ -17,8 +17,14 @@ function SportsComplexGit() {
 function SportsComplexblog() {
     window.open('https://velog.io/@winsam003/series/FitNest%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8');
 }
-function cookieRun() {
+function SportsComplexAWS() {
+    window.open('http://dbrghl-bucket.s3-website.ap-northeast-2.amazonaws.com/');
+}
+function cookieRunGit() {
     window.open('https://github.com/simsim916/coinJung_CookieRun.git');
+}
+function cookieRunGitPage() {
+    window.open('https://simsim916.github.io/coinJung_CookieRun/');
 }
 
 
